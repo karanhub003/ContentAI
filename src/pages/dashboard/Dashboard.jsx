@@ -9,6 +9,9 @@ export default function Dashboard() {
       <SideBar />
       <main>
         <Header />
+        <div>
+          <h2>KAran SIngh</h2>
+        </div>
       </main>
     </div>
   );
