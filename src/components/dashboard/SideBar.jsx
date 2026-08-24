@@ -7,14 +7,14 @@ export default function () {
     
   return (
 
-    <div className="sideBarContainer  border-white w-[20%]  bg-[#0A0F18] flex flex-col  py-3 px-6.5 ">
+    <div className="sideBarContainer  w-71.5 shrink-0  bg-[#0A0F18] flex flex-col  py-3 px-5  border-r border-[#1E293B] ">
       <div className="topContainer">
         <div className="logoContainer flex  gap-2 items-center p-2.5">
         <div className="imgBox w-10 h-10 flex items-center justify-center">
           <img src={logoImg} alt="logoImage" />
         </div>
         <div className="nameBox">
-          <h2 className=" text-2xl font-bold text-white">ContentPilot AI</h2>
+          <h2 className=" text-[20px] font-bold text-white">ContentPilot AI</h2>
         </div>
       </div>
       <hr className="my-2.5 border border-[#1E293B]  "/>

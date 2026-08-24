@@ -5,13 +5,10 @@ import Header from "../../components/dashboard/Header";
 export default function Dashboard() {
   return (
     <div
-      className="dashboardPageContainer flex w-full ">
+      className="dashboardPageContainer flex min-h-screen ">
       <SideBar />
-      <main>
+      <main className="flex-1 min-w-0">
         <Header />
-        <div>
-          <h2>KAran SIngh</h2>
-        </div>
       </main>
     </div>
   );

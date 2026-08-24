@@ -2,6 +2,6 @@ import React from 'react'
 
 export default function Input({children}) {
   return ( 
-    <div><input type="text" placeholder={children}/></div>
+    <div className='w-full'><input className='w-full outline-0' type="text" placeholder={children}/></div>
   )
 }
