@@ -119,26 +119,32 @@ export const contentDistribution = [
     platform: "LinkedIn",
     posts: 45,
     percentage: 35.2,
+    color: "#2563EB",
   },
   {
     platform: "Instagram",
     posts: 32,
     percentage: 25.0,
+    color: "#C0268D",
+
   },
   {
     platform: "Twitter",
     posts: 28,
     percentage: 21.9,
+     color: "#38A8E0",
   },
   {
     platform: "Facebook",
     posts: 15,
     percentage: 11.7,
+    color: "#1976D2",
   },
   {
     platform: "Others",
     posts: 8,
     percentage: 6.2,
+    color: "#64748B",
   },
 ];
 

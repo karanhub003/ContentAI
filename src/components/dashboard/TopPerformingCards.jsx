@@ -15,7 +15,7 @@ export default function TopPerformingCards({topContent}) {
       </div>
      </div>
       
-      <div className="contentPerformanceInfo flex gap-3  items-center">
+      <div className="contentPerformanceInfo flex gap-6.5  items-center">
         <div className="reachBox flex flex-col items-center">
           <h2 >{topContent.reach}</h2>
           <p className="text-[12px] font-medium text-[#94A3B8]">Reach</p>

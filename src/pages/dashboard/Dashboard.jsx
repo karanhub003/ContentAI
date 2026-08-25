@@ -5,6 +5,8 @@ import StatsContainer from "../../components/dashboard/StatsContainer";
 import GreetingCard from "../../components/dashboard/GreetingCard";
 import AnalyticsChart from "../../components/dashboard/AnalyticsChart";
 import TopPerformingContent from "../../components/dashboard/TopPerformingContent";
+import DistributionPieChart from "../../components/dashboard/DistributionPieChart";
+import UpcomingSchedule from "../../components/dashboard/UpcomingSchedule";
 
 export default function Dashboard() {
   return (
@@ -18,6 +20,10 @@ export default function Dashboard() {
           <div className="ContentMainContainer w-full flex gap-5.5 mt-6">
             <AnalyticsChart/>
             <TopPerformingContent/>
+          </div>
+          <div className="distributionContainer w-full  flex mt-6 ">
+            <DistributionPieChart/>
+            <UpcomingSchedule/>
           </div>
         </div>
       </main>
