@@ -5,7 +5,7 @@ import React from 'react'
 export default function StatCard({stats}) {
    
   return (
-    <div className='statsCardContainer w-52.75 h-32.5   p-5.75 flex bg-[#0D131D] gap-2.5 rounded-xl'>
+    <div className='statsCardContainer    p-5.75 flex bg-[#0D131D] gap-2.5 rounded-xl'>
         <div className={stats.style}>
             <i class={stats.icon} ></i>
         </div>

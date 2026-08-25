@@ -5,7 +5,7 @@ import {topPerformingContent} from  '../../data/dashboard'
 
 export default function TopPerformingContent() {
   return (
-    <div className='topPerformingContainer w-[50%]  bg-[#0D131D]  rounded-xl p-5 flex flex-col gap-4.5'>
+    <div className='topPerformingContainer   bg-[#0D131D]  rounded-xl p-5 flex flex-col gap-4.5'>
         <div className="topBoxContainer flex justify-between items-center ">
             <div className="infoBox flex items-center gap-2.5">
                 <h2>Top Performing Content </h2>

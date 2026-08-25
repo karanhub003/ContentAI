@@ -14,7 +14,7 @@ import {
 export default function AnalyticsChart() {
   console.log(contentPerformanceData);
   return (
-    <div className="analyticsContainer w-[50%]  bg-[#0D131D]  rounded-xl ">
+    <div className="analyticsContainer   bg-[#0D131D]  rounded-xl ">
       <div className="topContainer  flex items-center gap-2 p-2">
         <h2>Content Performance</h2>
         <i class="fa-solid fa-circle-info"></i>

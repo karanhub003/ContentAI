@@ -17,11 +17,11 @@ export default function Dashboard() {
     <div className="mx-auto w-full max-w-[1600px] px-6 py-8">
           <GreetingCard />
           <StatsContainer />
-          <div className="ContentMainContainer w-full flex gap-5.5 mt-6">
+          <div className="ContentMainContainer grid grid-cols-[1.5fr_1fr] gap-5  mt-6">
             <AnalyticsChart/>
             <TopPerformingContent/>
           </div>
-          <div className="distributionContainer w-full  flex mt-6 ">
+          <div className="distributionContainer w-full  grid grid-cols-[repeat(3,1fr)] mt-6 ">
             <DistributionPieChart/>
             <UpcomingSchedule/>
           </div>
