@@ -7,6 +7,7 @@ import AnalyticsChart from "../../components/dashboard/AnalyticsChart";
 import TopPerformingContent from "../../components/dashboard/TopPerformingContent";
 import DistributionPieChart from "../../components/dashboard/DistributionPieChart";
 import UpcomingSchedule from "../../components/dashboard/UpcomingSchedule";
+import AIContentAssistant from "../../components/dashboard/AIContentAssistant";
 
 export default function Dashboard() {
   return (
@@ -21,9 +22,10 @@ export default function Dashboard() {
             <AnalyticsChart/>
             <TopPerformingContent/>
           </div>
-          <div className="distributionContainer w-full  grid grid-cols-[repeat(3,1fr)] mt-6 ">
+          <div className="distributionContainer w-full  grid grid-cols-[repeat(3,1fr)] gap-5 mt-6 ">
             <DistributionPieChart/>
             <UpcomingSchedule/>
+            <AIContentAssistant/>
           </div>
         </div>
       </main>

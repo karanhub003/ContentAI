@@ -10,16 +10,16 @@ export default function DistributionPieChart() {
         <h2>Content Distribution</h2>
         <i class="fa-solid fa-circle-info"></i>
       </div>
-<div className="contentPieChartWrapper flex p-3 ">
-<div className="DistributionPieChartContainer  w-45 shrink-0 p-2.5">
-      <ResponsiveContainer width="100%" height={250}>
+<div className="contentPieChartWrapper flex items-center p-3 ">
+<div className="DistributionPieChartContainer  w-[45%] shrink-0 p-2.5 ">
+      <ResponsiveContainer width="100%" height={200}>
         <PieChart>
           <Pie
             data={contentDistribution}
             dataKey="posts"
             nameKey="name"
-            innerRadius={55}
-            outerRadius={80}
+            innerRadius={45}
+            outerRadius={65}
             startAngle={100}
             endAngle={-270}
             shape={(props) => <Sector {...props} fill={props.payload.color} stroke="none" />}
@@ -27,8 +27,8 @@ export default function DistributionPieChart() {
         </PieChart>
       </ResponsiveContainer>
     </div>
-    <div className="pieChartInfoContainer  flex p-2.5  ">
-        <div className="infoBox flex flex-col  justify-around">
+    <div className="pieChartInfoContainer   flex-1 min-w-0   ">
+        <div className="infoBox flex flex-col  gap-4 ">
             {contentDistribution.map((content)=>(
              <>
             <div className="infoCard flex gap-4 justify-between">
