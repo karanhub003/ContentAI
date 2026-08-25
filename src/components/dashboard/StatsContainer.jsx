@@ -5,7 +5,7 @@ import StatCard from "./StatCard";
 export default function StatsContainer() {
   // console.log(dashboardStats);
   return (
-    <div className="statsCardWrapperContainer border  flex items-center p-2.5">
+    <div className="statsCardWrapperContainer mt-6  flex items-center  justify-between">
       {dashboardStats.map((stats) => (
         <StatCard key={stats.id} stats={stats} />
       ))}
