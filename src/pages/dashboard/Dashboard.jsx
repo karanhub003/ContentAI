@@ -3,6 +3,8 @@ import SideBar from "../../components/dashboard/SideBar";
 import Header from "../../components/dashboard/Header";
 import StatsContainer from "../../components/dashboard/StatsContainer";
 import GreetingCard from "../../components/dashboard/GreetingCard";
+import AnalyticsChart from "../../components/dashboard/AnalyticsChart";
+import TopPerformingContent from "../../components/dashboard/TopPerformingContent";
 
 export default function Dashboard() {
   return (
@@ -13,6 +15,10 @@ export default function Dashboard() {
     <div className="mx-auto w-full max-w-[1600px] px-6 py-8">
           <GreetingCard />
           <StatsContainer />
+          <div className="ContentMainContainer w-full flex gap-5.5 mt-6">
+            <AnalyticsChart/>
+            <TopPerformingContent/>
+          </div>
         </div>
       </main>
     </div>

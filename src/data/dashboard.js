@@ -1,3 +1,9 @@
+import aiImage from '../assets/New folder/Ai.webp'
+import convertImage from '../assets/New folder/convets.webp'
+import humanImage from '../assets/New folder/human.webp'
+
+
+
 export const dashboardStats = [
   {
     id: 1,
@@ -59,7 +65,7 @@ export const topPerformingContent = [
     platform: "Blog",
     reach: "12.4K",
     engagement: "1.2K",
-    image: "/images/content-ai-tools.png",
+    image: aiImage,
   },
   {
     id: 2,
@@ -68,7 +74,7 @@ export const topPerformingContent = [
     platform: "LinkedIn",
     reach: "9.8K",
     engagement: "982",
-    image: "/images/content-converts.png",
+    image: convertImage  ,
   },
   {
     id: 3,
@@ -77,7 +83,7 @@ export const topPerformingContent = [
     platform: "Twitter",
     reach: "7.6K",
     engagement: "687",
-    image: "/images/ai-human-creativity.png",
+    image: humanImage,
   },
 ];
 
