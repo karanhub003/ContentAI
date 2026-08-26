@@ -3,7 +3,7 @@ import {upcomingSchedule} from '../../data/dashboard'
 import Button from "../common/Button";
 export default function UpcomingSchedule() {
   return (
-<div className="UpcomingScheduleContainer bg-[#0D131D]  rounded-xl px-3.5 ">
+<div className="UpcomingScheduleContainer bg-[#0D131D]  rounded-xl p-2.5 flex flex-col gap-5.5 ">
       <div className="scheduleHeader flex items-center justify-between">
 
         <div className="flex items-center gap-2.5">
@@ -14,7 +14,7 @@ export default function UpcomingSchedule() {
             ></i>
         </div>
 
-        <Button>View all</Button>
+        <Button variant="outline">View all</Button>
 
     </div>
     <div className="scheduleContentWrapper">
@@ -23,7 +23,7 @@ export default function UpcomingSchedule() {
                     upcomingSchedule.map((upcomingContent)=>(
                       <>
                         <div className="scheduleCardBox grid grid-cols-[65px_minmax(0,1fr)_85px] gap-2">
-                          <div className="dateTimeBoxv flex flex-col text-sm text-[#94A3B8] ">
+                          <div className="dateTimeBoxv flex flex-col text-[12px] text-[#94A3B8] ">
                             <p>{upcomingContent.time}</p>
                             <p>{upcomingContent.date}</p>
                             

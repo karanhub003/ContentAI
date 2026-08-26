@@ -21,7 +21,7 @@ export default function Header() {
           </div>
         </div>
         <div className="rightSideContainer flex gap-5  items-center">
-          <Button>
+          <Button variant="secondary">
             <i class="fa-solid fa-plus"></i> Create New
           </Button>
           <div className="notificationContainer  flex flex-col relative items-center ">

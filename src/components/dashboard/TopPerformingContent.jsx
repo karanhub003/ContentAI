@@ -11,7 +11,7 @@ export default function TopPerformingContent() {
                 <h2>Top Performing Content </h2>
             <i class="fa-solid fa-circle-info text-[#94A3B8]"></i>
             </div>
-            <Button>View all</Button>
+            <Button variant='outline'>View all</Button>
         </div>
     <div className="topPerformingCardWrapper flex flex-col gap-3.5 ">
         {

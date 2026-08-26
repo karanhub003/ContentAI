@@ -9,7 +9,7 @@ export default function AICreditsCard() {
         <div className='w-full bg-slate-500 h-1.5 rounded-full'>
           <div className=" w-[80%] bg-purple-400 h-1.5 rounded-full"></div>
         </div>
-        <Button>Upgrade Plan</Button>
+        <Button >Upgrade Plan</Button>
     </div>
   )
 }

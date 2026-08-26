@@ -5,13 +5,13 @@ import { contentDistribution } from "../../data/dashboard";
 
 export default function DistributionPieChart() {
   return (
-<div className="contentDistributionMainContainer   bg-[#0D131D]  rounded-xl px-3.5">
-    <div className="topContainer  flex items-center gap-2 p-2">
+<div className="contentDistributionMainContainer   bg-[#0D131D]  rounded-xl p-2.5">
+    <div className="topContainer  flex items-center gap-2 pt-2  ">
         <h2>Content Distribution</h2>
         <i class="fa-solid fa-circle-info"></i>
       </div>
-<div className="contentPieChartWrapper flex items-center p-3 ">
-<div className="DistributionPieChartContainer  w-[45%] shrink-0 p-2.5 ">
+<div className="contentPieChartWrapper flex items-center  ">
+<div className="DistributionPieChartContainer  w-[45%] shrink-0 ">
       <ResponsiveContainer width="100%" height={200}>
         <PieChart>
           <Pie
@@ -34,11 +34,11 @@ export default function DistributionPieChart() {
             <div className="infoCard flex gap-4 justify-between">
                 <div className="platformInfoBox flex items-center gap-2" >
                     <div className="w-2.5 h-2.5 rounded-full" style={{ backgroundColor: content.color }}></div>
-                    <div>{content.platform}</div>
+                    <div className="text-[14px]">{content.platform}</div>
                    </div>
             <div className="percentageInfoBox flex  ">
-            <p>{content.posts}</p>
-            <p>({content.percentage}%)</p>
+            <p className="text-[14px] text-[#94A3B8]">{content.posts}</p>
+            <p className="text-[14px] text-[#94A3B8]">({content.percentage}%)</p>
             </div>
             </div>
              </>
