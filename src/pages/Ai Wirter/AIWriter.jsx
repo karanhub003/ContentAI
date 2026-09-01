@@ -6,7 +6,7 @@ import ContentGenerator from '../../components/AI writer/ContentGenerator'
 
 export default function AIWriter() {
   return (
-    <div>
+    <div className='flex flex-col gap-3.5'>
       <PageHeader/>
 
 
