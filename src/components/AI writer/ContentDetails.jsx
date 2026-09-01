@@ -31,12 +31,12 @@ export default function ContentDetails() {
       <div className="contentLengthContainer flex flex-col gap-2">
         <label className="text-[16px]">Content Length</label>
         <div className="lengthCardWrapper grid grid-cols-3 gap-3">
-            <div className="lengthCard border flex flex-col items-center border-[#1E293B] rounded-lg py-1.5"><p className="text-[14px] ">Short</p>
+            <div className="lengthCard border flex flex-col items-center border-[#1E293B] rounded-lg py-1.5 hover:border-[#8B5CF6] cursor-pointer active:border-[#8B5CF6]"><p className="text-[14px] ">Short</p>
             <p className="text-[14px] ">~300 words</p>
             </div>
-            <div className="lengthCard border flex flex-col items-center border-[#1E293B] rounded-lg py-1.5"><p className="text-[14px] ">Medium</p>
+            <div className="lengthCard border flex flex-col items-center border-[#1E293B] rounded-lg py-1.5 hover:border-[#8B5CF6] cursor-pointer active:border-[#8B5CF6]"><p className="text-[14px] ">Medium</p>
             <p className="text-[14px] ">~600 words</p></div>
-            <div className="lengthCard border flex flex-col items-center border-[#1E293B] rounded-lg py-1.5"><p className="text-[14px] ">Long</p><p className="text-[14px] ">~1200 words</p></div>
+            <div className="lengthCard border flex flex-col items-center border-[#1E293B] rounded-lg py-1.5 hover:border-[#8B5CF6] cursor-pointer active:border-[#8B5CF6]"><p className="text-[14px] ">Long</p><p className="text-[14px] ">~1200 words</p></div>
         </div>
       </div>
       <Button variant="secondary" size="lg">Generate Content</Button>
