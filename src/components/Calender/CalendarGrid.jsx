@@ -21,12 +21,12 @@ export default function CalendarGrid() {
 
         <div className="p-3 text-center text-sm text-[#94A3B8]">Sat</div>
       </div>
-      <div className="dateBox grid grid-cols-7">
+      <div className="dateBox grid grid-cols-7 ">
         {
             calendarDays.map((day,index)=>{
                 const event= calendarEvents.find((event)=> event.date===day)
                 return(
-                <div key={index} className="min-h-26.25 border-r border-b border-[#1E293B] p-3">
+                <div key={index} className="min-h-26.25  border-r border-b border-[#1E293B] py-3 px-1">
                     <span className="text-sm text-white">{day}</span>
 
 

@@ -17,7 +17,7 @@ export const calendarEvents = [
     platform: "Twitter",
     icon: "fa-twitter",
     type: "social",
-    color: blue-500,
+    color: "22C55E",
   },
   {
     id: 2,
@@ -28,7 +28,7 @@ export const calendarEvents = [
     platform: "LinkedIn",
     icon: "fa-linkedin",
     type: "social",
-    color: blue-500,
+    color:"22C55E" ,
   },
   {
     id: 3,
