@@ -1,3 +1,16 @@
+
+import instagramLogo from "../assets/Social Icon pack/Instagram Logo.webp"
+import birdLogo from "../assets/Social Icon pack/Bird Logo.webp"
+import LinkedinLogo from "../assets/Social Icon pack/Linkedin Logo.webp"
+import emailLogo from "../assets/Social Icon pack/New Gmail Logo.webp"
+
+
+
+
+
+
+
+
 export const calendarDays = [
   28, 29, 30,
   1, 2, 3, 4,
@@ -161,5 +174,60 @@ export const calendarEvents = [
     icon: "fa-instagram",
     type: "social",
     color: "EF4444",
+  },
+];
+
+
+
+
+
+export const contentSummary = [
+  { name: "Blog Posts", posts: 6, percentage: 25, color: "#4ADE80" },
+  { name: "Social Posts", posts: 10, percentage: 41, color: "#3B82F6" },
+  { name: "Emails", posts: 3, percentage: 12, color: "#7C3AED" },
+  { name: "Videos", posts: 4, percentage: 17, color: "#EF4444" },
+  { name: "Other", posts: 1, percentage: 5, color: "#FACC15" },
+];
+
+export const upcomingContent = [
+  {
+    id: 1,
+    title: "How AI Can Improve Your Writing",
+    platform: "Twitter",
+    image: birdLogo,
+    imageAlt:"twitter-logo",
+    date: "May 16, 2024",
+    time: "11:30 AM",
+    color: "#3B82F6",
+  },
+  {
+    id: 2,
+    title: "Productivity Tips for Creators",
+    platform: "Instagram",
+    image: instagramLogo,
+    imageAlt:"instagram-logo",
+    date: "May 17, 2024",
+    time: "04:00 PM",
+    color: "#A855F7",
+  },
+  {
+    id: 3,
+    title: "Weekly Newsletter",
+    platform: "Email",
+    image: emailLogo,
+    imageAlt:"email-logo",
+    date: "May 19, 2024",
+    time: "09:00 AM",
+    color: "#7C3AED",
+  },
+  {
+    id: 4,
+    title: "Case Study: 2x Growth with AI",
+    platform: "LinkedIn",
+    image: LinkedinLogo,
+    imageAlt:"linkedin-logo",
+    date: "May 20, 2024",
+    time: "10:00 AM",
+    color: "#2563EB",
   },
 ];

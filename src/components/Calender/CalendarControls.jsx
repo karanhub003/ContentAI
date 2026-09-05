@@ -44,7 +44,7 @@ export default function CalendarControls() {
         </button>
       </div>
       <div className="rightSideContainer flex items-center gap-4">
-        <div className="channelsContainer flex rounded-lg border border-[#1E293B] bg-[#0D131D] px-4 py-2 text-sm text-[#CBD5E1] hover:bg-[#172033] gap-3.5">
+        <div className="channelsContainer flex rounded-lg border border-[#1E293B]   px-4 py-2 text-sm text-[#CBD5E1] hover:bg-[#172033] gap-3.5">
           <div className="infoChannel">
             <p>
               <i class="fa-solid fa-globe"></i> All channels
