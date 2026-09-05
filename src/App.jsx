@@ -3,6 +3,7 @@ import Dashboard from './pages/dashboard/Dashboard'
 import DashboardLayout from './components/layout/DashboardLayout'
 import AIWriter from './pages/Ai Wirter/AIWriter'
 import Calendar from './pages/Calendar/Calendar'
+import Template from './pages/Template/Template'
 
 
 
@@ -11,7 +12,8 @@ export default function App() {
      <DashboardLayout>
       {/* <Dashboard/> */}
       {/* <AIWriter/> */}
-      <Calendar/>
+      {/* <Calendar/> */}
+      <Template/>
      </DashboardLayout>
   )
 }
