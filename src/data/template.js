@@ -6,7 +6,16 @@ import content from '../assets/Template Img/content.webp'
 import email from '../assets/Template Img/email.webp'
 import product from '../assets/Template Img/product.webp'
 
-
+// all template images
+import ideaImg from '../assets/Template Img/how.webp'
+import caseImg from '../assets/Template Img/case.webp'
+import faqImg from '../assets/Template Img/faq.webp'
+import listicleImg from '../assets/Template Img/listicle.webp'
+import problemImg from '../assets/Template Img/problem.webp'
+import quoteImg from '../assets/Template Img/quote.webp'
+import testimonialImg from '../assets/Template Img/testimonial.webp'
+import topicImg from '../assets/Template Img/topic.webp'
+import videoImg from '../assets/Template Img/video.webp'
 
 export const templates = [
   {
@@ -62,5 +71,100 @@ export const templates = [
     imageAlt:"contentWirtter",
     iconBg: "#831843",
     uses: "6.3K",
+  },
+];
+
+export const templateCategories=["All","Blog","Social Media","Email","Marketing","E-commerce","SEO","Video","Other",]
+
+export const allTemplates = [
+  {
+    id: 1,
+    title: "How-To Guide",
+    description: "Step-by-step guides to help your audience solve problems.",
+    image:ideaImg,
+   imageAlt:"ideaImg",
+    category: "Blog",
+    platform: "All",
+    uses: "5.4K",
+  },
+  {
+    id: 2,
+    title: "Listicle",
+    description: "Create engaging list-based articles and posts.",
+    image:listicleImg,
+    imageALt:"listicleImg",
+    category: "Blog",
+    platform: "All",
+    uses: "4.8K",
+  },
+  {
+    id: 3,
+    title: "Quote Post",
+    description: "Turn quotes into beautiful and shareable posts.",
+    image:quoteImg,
+    imageAlt: "quoteImg",
+    category: "Social Media",
+    platform: "Instagram",
+    uses: "4.2K",
+  },
+  {
+    id: 4,
+    title: "Problem-Agitate-Solve",
+    description: "Identify problems, agitate and provide the perfect solution.",
+    image:problemImg,
+    imageATl: "problemImg",
+    category: "Marketing",
+    platform: "All",
+    uses: "4.1K",
+  },
+  {
+    id: 5,
+    title: "Case Study",
+    description: "Write detailed case studies that build trust.",
+    image:caseImg,
+    imageAlt: "caseImg",
+    category: "Marketing",
+    platform: "All",
+    uses: "3.6K",
+  },
+  {
+    id: 6,
+    title: "Testimonial",
+    description: "Create authentic testimonials that build credibility.",
+    image:testimonialImg,
+    imageAlt: "testimonialImg",
+    category: "Marketing",
+    platform: "All",
+    uses: "3.2K",
+  },
+  {
+    id: 7,
+    title: "FAQ Generator",
+    description: "Generate frequently asked questions about any topic.",
+    image:faqImg,
+    imageAlt: "faqImg",
+    category: "SEO",
+    platform: "All",
+    uses: "2.9K",
+  },
+  {
+    id: 8,
+    title: "Video Script",
+    description: "Create engaging scripts for your videos.",
+   image:videoImg,
+    imageAlt:"videoImg",
+    category: "Video",
+    platform: "YouTube",
+    uses: "2.7K",
+  },
+  {
+    id: 9,
+    title: "Topic Ideas",
+    description: "Generate trending topic ideas for your content.",
+    image:topicImg,
+    imageAlt:"topicImg",
+    category: "Blog",
+    platform: "All",
+    uses: "2.5K",
   },
 ];

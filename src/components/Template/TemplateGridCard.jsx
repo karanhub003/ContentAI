@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function TemplateGridCard({templates}) {
   return (
-    <div className='TemplateGridCardContainer border flex flex-col justify-between py-3.5 px-3 rounded-lg bg-[#0D131D] border-[#1E293B] gap-4'>
+    <div className='TemplateGridCardContainer border flex flex-col justify-between py-3.5 px-3 rounded-lg bg-[#0D131D] border-[#1E293B] gap-4 hover:border-purple-400 cursor-pointer'>
       <div className="topContainer flex  ">
         <div className="leftSide flex flex-col gap-1.5">
         <div className="topSide flex justify-between ">
