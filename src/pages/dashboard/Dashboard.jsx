@@ -11,7 +11,7 @@ import AIContentAssistant from "../../components/dashboard/AIContentAssistant";
 
 export default function Dashboard() {
   return (
-    <div className="mx-auto w-full max-w-[1600px] px-6 py-8">
+    <div className="mx-auto w-full max-w-[1600px]">
           <GreetingCard />
           <StatsContainer />
           <div className="ContentMainContainer grid grid-cols-[1.5fr_1fr] gap-5  mt-6">

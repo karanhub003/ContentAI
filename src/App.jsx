@@ -4,16 +4,25 @@ import DashboardLayout from './components/layout/DashboardLayout'
 import AIWriter from './pages/Ai Wirter/AIWriter'
 import Calendar from './pages/Calendar/Calendar'
 import Template from './pages/Template/Template'
+import { Navigate, Route, Routes } from 'react-router-dom'
 
 
 
 export default function App() {
   return (
-     <DashboardLayout>
-      {/* <Dashboard/> */}
-      {/* <AIWriter/> */}
-      {/* <Calendar/> */}
-      <Template/>
-     </DashboardLayout>
+    <Routes>
+      <Route element={<DashboardLayout/>}>
+          <Route path='/dashboard' element={<Dashboard/>}/>
+          <Route path='/ai-writer' element={<AIWriter/>}/>
+          <Route path='/calendar' element={<Calendar/>}/>
+          <Route path='/template' element={<Template/>}/>
+
+      
+      </Route>
+      <Route path='*' element={<Navigate to="/dashboard" replace/>}/>
+
+
+    </Routes>
+    
   )
 }

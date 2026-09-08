@@ -1,8 +1,9 @@
 import React from "react";
 import SideBar from "../dashboard/SideBar";
 import Header from "../dashboard/Header";
+import { Outlet } from "react-router-dom";
 
-export default function DashboardLayout({ children }) {
+export default function DashboardLayout() {
   return (
     <div className="dashboardPageContainer flex min-h-screen">
 
@@ -13,7 +14,7 @@ export default function DashboardLayout({ children }) {
         <Header />
 
         <div className="mx-auto w-full max-w-[1600px] px-6 py-8">
-          {children}
+          <Outlet/>
         </div>
 
       </main>
