@@ -1,10 +1,10 @@
 import React from "react";
 import logoImg from "../../../assets/New folder/logoImage.png";
 import heroImg from "../../../assets/Auth Page/heroImg.webp";
-import googleImg from '../../../assets/Auth Page/google.png'
-import microsoftImg from '../../../assets/Auth Page/microsoft.png'
-import appleImg from '../../../assets/Auth Page/apple.png'
-
+import googleImg from "../../../assets/Auth Page/google.png";
+import microsoftImg from "../../../assets/Auth Page/microsoft.png";
+import appleImg from "../../../assets/Auth Page/apple.png";
+import bundle from "../../../assets/Auth Page/bundle.webp";
 
 import { features } from "../../../data/features";
 
@@ -12,11 +12,11 @@ export default function Login() {
   return (
     <div className="LoginMainContainer border min-h-screen flex justify-center items-center    ">
       <div
-        className="contentMainContainer max-w-[1600px] mx-auto p-3  bg-cover bg-no-repeat bg-center "
+        className="contentMainContainer max-w-[1600px] mx-auto p-3  bg-contain bg-no-repeat bg-center "
         style={{ backgroundImage: `url(${heroImg})` }}
       >
-        <div className="insideWrapperContainer grid grid-cols-2 gap-3.5">
-          <div className="leftSideContainer border  flex flex-col justify-between p-1.5">
+        <div className="insideWrapperContainer  grid grid-cols-[1fr_1fr] gap-3.5 ">
+          <div className="leftSideContainer    flex flex-col justify-between p-8">
             <div className="topSideContainer">
               {" "}
               <div className="logoBox  flex items-center font-bold gap-2">
@@ -40,8 +40,11 @@ export default function Login() {
                 </p>
               </div>
             </div>
-            <div className="bottomContainer">
-              <div className="featuresBoxWrapper flex border p-1.5 gap-1">
+            <div>
+              <img className="" src={bundle} alt="bundle" />
+            </div>
+            <div className="bottomContainer py-2.5 flex flex-col gap-3">
+              <div className="featuresBoxWrapper flex  p-1.5 gap-1">
                 {features.map((feature) => (
                   <>
                     <div className="featureBox  flex flex-col items-center p-2 gap-1.5 ">
@@ -58,9 +61,9 @@ export default function Login() {
                       </p>
                     </div>
                     {feature.id === 4 ? (
-                      <div className="hidden"></div>
+                      <div className=""></div>
                     ) : (
-                      <div className="w-0.5 h-full bg-[#1E293B]"></div>
+                      <div className="w-0.5  bg-[#1E293B]"></div>
                     )}
                   </>
                 ))}
@@ -82,62 +85,101 @@ export default function Login() {
               </div>
             </div>
           </div>
-          <div className="rightSideContainer border ">
-            <div className="toggleMode">
-              <i class="fa-regular fa-moon"></i>
-              <p>Dark</p>
-              <i class="fa-solid fa-angle-down"></i>
+          <div className="rightSideContainer  border flex flex-col   gap-3 bg-[#0D131D] border-[#1E293B] rounded-lg p-2">
+            <div className="toggleWrapper flex justify-end ">
+              <div className="toggleMode border flex items-center py-2 px-3.5 gap-1.5 align-right cursor-pointer">
+                <i className="fa-regular fa-moon text-[12px]"></i>
+                <p className="text-[12px] font-medium">Dark</p>
+                <i className="fa-solid fa-angle-down text-[12px]"></i>
+              </div>
             </div>
-                <div className="innerFormContainer border">
-                <div className="headingInfo">
-                  <h2>Welcome back</h2>
-                  <p>Sign in to continue to <span>ContentPilot Al</span></p>
-                </div>
-              <form>
-                <div className="emailBox">
+            <div className="innerFormContainer flex flex-col  border w-140 mx-auto px-5 py-10 border-[#1E293B] bg-[#111927] rounded-lg gap-3.5">
+              <div className="headingInfo py-3.5">
+                <h2 className="text-2xl font-semibold">Welcome back 👋</h2>
+                <p className="text-[18px] font-medium text-[#94A3B8]">
+                  Sign in to continue to{" "}
+                  <span className="text-purple-500">ContentPilot Al</span>
+                </p>
+              </div>
+              <form className=" flex flex-col gap-6 py-3.5">
+                <div className="emailBox  flex flex-col gap-1">
                   <label htmlFor="">Email address</label>
-                  <div className="emailInputField">
-                    <input type="email" name="" id="" placeholder="Enter your email"/>
+                  <div className="emailInputField border p-2 flex items-center gap-1  rounded-lg border-[#1E293B]">
+                    <i class="fa-solid fa-envelope text-[#94A3B8]"></i>
+                    <input
+                      className="w-[90%]"
+                      type="email"
+                      name=""
+                      id=""
+                      placeholder="Enter your email"
+                    />
                   </div>
                 </div>
-                <div className="passwordBox">
-                  <div className="passwordWrapper">
+                <div className="passwordBox  flex flex-col gap-1">
+                  <div className="passwordWrapper flex justify-between items-center ">
                     <label htmlFor="">Password</label>
-                    <p>Forgot password?</p>
+                    <p className="text-purple-500">Forgot password?</p>
                   </div>
-                  <div className="passwordInputField">
-                    <input type="password" name="" id="" placeholder="Enter your password"/>
+                  <div className="passwordInputField border p-2 flex items-center gap-1 rounded-lg border-[#1E293B] ">
+                    <i class="fa-solid fa-lock text-[#94A3B8]"></i>
+                    <input
+                      className="w-[90%]"
+                      type="password"
+                      name=""
+                      id=""
+                      placeholder="Enter your password"
+                    />
                   </div>
                 </div>
-                <div className="checkBox">
-                  <div></div>
+                <div className="checkBox flex items-center gap-2 ">
+                  <div className="w-4 h-4 border rounded-xs"></div>
                   <p>Remember me</p>
                 </div>
 
-                <button type="submit"><p>sign in</p><p><i class="fa-solid fa-arrow-right"></i></p></button>
+                <button
+                  className="border flex  p-2 rounded-lg bg-purple-600"
+                  type="submit"
+                >
+                  <p>sign in</p>
+                  <span>
+                    <i className="fa-solid fa-arrow-right align-right"></i>
+                  </span>
+                </button>
               </form>
 
-              <div className="divider">
+              <div className="divider grid grid-cols-3 items-center py-3.5">
                 <hr />
-                <p>or Continue with</p>
+                <p className="text-center">or Continue with</p>
                 <hr />
               </div>
 
-                <div className="socialLinkBoxContainer">
-                  <div className="socialBox"><img src={googleImg} alt="google" /><p>Google</p></div>
-                  <div className="socialBox"><img src={microsoftImg} alt="microsoft" /><p>Microsoft</p></div>
-                  <div className="socialBox"><img src={appleImg} alt="apple" /><p>Apple</p></div>
+              <div className="socialLinkBoxContainer flex  items-center justify-between py-6">
+                <div className="socialBox border flex gap-2 items-center py-2 px-2 rounded-lg  w-40 justify-center ">
+                  <img className="w-5" src={googleImg} alt="google" />
+                  <p>Google</p>
                 </div>
-                 <hr />
-                <div className="div">
-                  <p>Don't have an account? <span>Sign up</span></p>
+                <div className="socialBox border flex gap-2 items-center p py-2 px-2 rounded-lg w-40 justify-center ">
+                  <img className="w-5" src={microsoftImg} alt="microsoft" />
+                  <p>Microsoft</p>
                 </div>
+                <div className="socialBox border flex gap-2 items-center p py-2 px-2 rounded-lg w-40 justify-center ">
+                  <img className="w-5" src={appleImg} alt="apple" />
+                  <p>Apple</p>
                 </div>
-              <div className="bottomInfo">
-                <p><i class="fa-solid fa-shield"></i> Your data is secure with us.</p>
-                <p>We never share your information with anyone.</p>
               </div>
-
+              <hr />
+              <div className="div p-5 text-center text-[14px]">
+                <p>
+                  Don't have an account? <span className="text-purple-500">Sign up</span>
+                </p>
+              </div> 
+            </div>
+            <div className="bottomInfo">
+              <p>
+                <i class="fa-solid fa-shield"></i> Your data is secure with us.
+              </p>
+              <p>We never share your information with anyone.</p>
+            </div>
           </div>
         </div>
       </div>
