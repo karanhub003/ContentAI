@@ -13,7 +13,7 @@ export default function DashboardLayout() {
 
         <Header />
 
-        <div className="mx-auto w-full max-w-[1600px] px-6 py-8">
+        <div className="mx-auto w-full max-w-[1600px] p-6">
           <Outlet/>
         </div>
 
