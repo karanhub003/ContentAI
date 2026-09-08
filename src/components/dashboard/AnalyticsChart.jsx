@@ -14,13 +14,13 @@ import {
 export default function AnalyticsChart() {
   console.log(contentPerformanceData);
   return (
-    <div className="analyticsContainer   bg-[#0D131D]  rounded-xl ">
-      <div className="topContainer  flex items-center gap-2 p-2">
-        <h2>Content Performance</h2>
+    <div className="analyticsContainer   bg-[#0D131D]  rounded-xl p-3 flex flex-col gap-4.5 ">
+      <div className="topContainer  flex items-center gap- ">
+        <h2 className="text-[20px]">Content Performance</h2>
         <i class="fa-solid fa-circle-info"></i>
       </div>
-      <div className="chartContainer   p-2 ">
-        <ResponsiveContainer width="100%" height={320}>
+      <div className="chartContainer    ">
+        <ResponsiveContainer width="100%" height={270}>
           <AreaChart data={contentPerformanceData}>
             <defs>
               <linearGradient id="purpleGradient" x1="0" y1="0" x2="0" y2="1">
@@ -34,8 +34,9 @@ export default function AnalyticsChart() {
               stroke="#94A3B8"
               tickLine={false}
               axisLine={true}
+              fontSize="12px" 
             />
-            <YAxis stroke="#64748B" tickLine={false} axisLine={false} />
+            <YAxis stroke="#64748B" tickLine={false} axisLine={false} fontSize="12px" />
             <Tooltip />
 
             <Area

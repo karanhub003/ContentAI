@@ -14,7 +14,7 @@ export default function Dashboard() {
     <div className="mx-auto w-full max-w-[1600px]">
           <GreetingCard />
           <StatsContainer />
-          <div className="ContentMainContainer grid grid-cols-[1.5fr_1fr] gap-5  mt-6">
+          <div className="ContentMainContainer grid grid-cols-[1.25fr_1fr] gap-5  mt-6">
             <AnalyticsChart/>
             <TopPerformingContent/>
           </div>
