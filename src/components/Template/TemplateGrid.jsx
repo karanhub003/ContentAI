@@ -5,9 +5,9 @@ import TemplateGridCard from './TemplateGridCard'
 
 export default function TemplateGrid() {
   return (
-    <div className='templateGridContainer flex flex-col gap-2.5'>
+    <div className='templateGridContainer flex flex-col gap-6 mt-9'>
     <div className="headingInfo flex items-center justify-between">
-        <div className="heading flex items-center gap-1.5"><i class="fa-solid fa-fire text-purple-400"></i><h3>Popular Template</h3></div>
+        <div className="heading flex items-center gap-1.5"><i class="fa-solid fa-fire text-purple-400"></i><h3 className='text-[20px] font-bold'>Popular Template</h3></div>
         <Button variant='outline' size='sm'>View All</Button>
     </div>
 
