@@ -8,7 +8,7 @@ import bundle from "../../../assets/Auth Page/bundle.webp";
 
 import { features } from "../../../data/features";
 
-export default function Login() {
+export default function Auth() {
   const [isTicked, setIsTicked] = useState(false);
   const [isSignUp, setIsSignUp] = useState(false);
 
