@@ -23,7 +23,7 @@ export default function Auth() {
   return (
     <div className="LoginMainContainer  min-h-screen flex justify-center items-center    ">
       <div
-        className="contentMainContainer border  border-[#1E293B]  rounded-lg max-w-[1600px]  p-3 grid grid-cols-[1fr_1fr]  bg-cover bg-left bg-no-repeat"
+        className="contentMainContainer border  border-[#1E293B]  rounded-lg max-w-[1600px]  px-4 py-6 grid grid-cols-[1.25fr_1fr] justify-between bg-cover bg-left bg-no-repeat"
         style={{ backgroundImage: `url(${heroImg})` }}
       >
         <div className="leftSideContainer   flex flex-col justify-between py-5 px-8">
@@ -103,8 +103,9 @@ export default function Auth() {
               <p className="text-[12px] font-medium">Dark</p>
               <i className="fa-solid fa-angle-down text-[12px]"></i>
             </div>
+
           </div>
-          <div className="innerFormContainer flex flex-col  border w-140 mx-auto  border-[#1E293B] bg-[#111927] rounded-lg gap-3.5 overflow-hidden">
+          <div className="innerFormContainer flex flex-col  border w-120 mx-auto  border-[#1E293B] bg-[#111927] rounded-lg gap-3.5 overflow-hidden">
             <div className="topSideContainer p-6">
               <div className="headingInfo py-3.5 flex flex-col gap-3">
                 <h2 className="text-3xl font-semibold">
@@ -119,7 +120,7 @@ export default function Auth() {
               </div>
               <form className=" flex flex-col gap-6 py-3.5">
                 {isSignUp && (
-                  <div className="nameWrapperContainer flex justify-between">
+                  <div className="nameWrapperContainer flex justify-between  ">
                     <div className="firstNameField flex flex-col gap-1">
                       <label className="text-[14px]" htmlFor="name">
                         Name
@@ -127,7 +128,7 @@ export default function Auth() {
                       <input
                         type="text"
                         id="name"
-                        className="name border p-2 rounded-lg placeholder:text-[12px] outline-none border-[#1E293B]"
+                        className="name  w-50 border p-2 rounded-lg placeholder:text-[12px] outline-none border-[#1E293B]"
                         placeholder="First Name"
                       />
                     </div>
@@ -138,7 +139,7 @@ export default function Auth() {
                       <input
                         type="text"
                         id="lastName"
-                        className="lastName border p-2 rounded-lg placeholder:text-[12px] outline-none border-[#1E293B]"
+                        className="lastName w-50 border p-2 rounded-lg placeholder:text-[12px] outline-none border-[#1E293B]"
                         placeholder="Last Name"
                       />
                     </div>
