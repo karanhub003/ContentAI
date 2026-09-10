@@ -7,6 +7,7 @@ import Template from './pages/Template/Template'
 import { Navigate, Route, Routes } from 'react-router-dom'
 
 import Auth from './pages/auth/Login/auth'
+import Landing from './pages/landing/Landing'
 
 
 
@@ -15,6 +16,7 @@ export default function App() {
     <Routes>
 
        <Route path="/auth" element={<Auth />} />
+       <Route path="/contentPilotAi" element={<Landing />} />
       
 
 
@@ -26,7 +28,7 @@ export default function App() {
 
       
       </Route>
-      <Route path='*' element={<Navigate to="/dashboard" replace/>}/>
+      <Route path='*' element={<Navigate to="/contentPilotAi" replace/>}/>
 
 
     </Routes>
