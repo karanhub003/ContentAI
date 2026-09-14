@@ -2,19 +2,24 @@ import React from 'react'
 import Header from '../../components/landing/Header'
 import LandingHero from '../../components/landing/LandingHero'
 import HighlightingCards from '../../components/landing/HighlightingCards'
-import heroImg from '../../assets/Auth Page/heroImg.webp'
+import heroImg from '../../assets/Landing Page/hero.webp'
+import TrustedTeams from '../../components/landing/TrustedTeams'
+import Problem from '../../components/landing/Problem'
 
 export default function Landing() {
   return (
    <>
-   <header className=' bg-cover bg-no-repeat bg-left' style={{ backgroundImage: `url(${heroImg})` }}>
+   <header className='bg-[#01061D]'>
+   <div className=' bg-cover bg-no-repeat bg-left max-w-345 mx-auto' style={{ backgroundImage: `url(${heroImg})` }}>
    <Header/>
    <LandingHero/>
+   </div>
    </header>
-  
-   <main>
-        
+   <main className='bg-[#01061D]'>
         <HighlightingCards/>
+        <TrustedTeams/>
+        <hr className='border-[#1E293B]' />
+        <Problem/>
    </main>
    
    </>

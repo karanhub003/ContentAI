@@ -4,45 +4,52 @@ import bundle from '../../assets/Auth Page/bundle.webp'
 
 export default function LandingHero() {
   return (
-    <div className="LandingHeroContainer grid grid-cols-[1fr_1fr] max-w-345 mx-auto">
-      <div className="leftSideContainer border">
-        <p>
-          <i class="fa-solid fa-wand-magic-sparkles"></i>AI-Powered Content
+    <div className="LandingHeroContainer grid grid-cols-[1fr_1.5fr] mt-5 items-center  ">
+      <div className="leftSideContainer  flex flex-col gap-12 ">
+      <div className="topSide flex flex-col gap-3">
+          <p className=" text-[10px] w-45 rounded-lg text-center p-1.5 bg-purple-600/30 text-purple-400 ">
+          <i class="fa-solid fa-wand-magic-sparkles text-purple-400"></i>AI-Powered Content
           Creation
         </p>
 
-        <div className="heroHeadingSubHeadingWrapper">
+        <div className="heroHeadingSubHeadingWrapper  flex flex-col gap-3">
           <div className="heading">
-            <h2>Create. Plan. Publish.</h2>
-            <h2>Grow with Al</h2>
+            <h2 className="text-5xl font-semibold">Create. Plan. Publish.</h2>
+            <h2 className="text-5xl font-semibold">Grow with <span className="text-purple-500">Al</span></h2>
           </div>
           <div className="subHeading">
-            <p>
+            <p className="text-[12px] font-semibold text-[#94A3B8]" >
               Your all-in-one Al content platform to ideate, create, schedule,
             </p>
-            <p> and analyze content co that drives real results.</p>
+            <p className="text-[12px] font-semibold text-[#94A3B8]" > and analyze content co that drives real results.</p>
           </div>
         </div>
-        <div className="ctaBtnWrapper">
+      </div>
+       <div className="bottomSide flex flex-col gap-5">
+         <div className="ctaBtnWrapper  flex gap-4 items-center">
             <Button variant="secondary" size="lg">Get started free</Button>
             <Button variant="outline" size="lg">Watch demo</Button>
         </div>
-        <div className="bottomInfo">
-            <div className="div">
-                <div></div>
-                <p>No credit card required</p>
+        <div className="bottomInfo  flex gap-3.5">
+            <div className="div flex gap-1.5 items-center">
+                <div className="w-4 h-4 bg-purple-500 rounded-full"></div>
+                <p className="text-[12px] text-[#94A3B8]">No credit card required</p>
             </div>
-            <div className="div">
-                <div></div>
-                <p>free forever plan</p>
+            <div className="div flex gap-1.5 items-center">
+                <div className="w-4 h-4 bg-purple-500 rounded-full"></div>
+                <p className="text-[12px] text-[#94A3B8]">free forever plan</p>
             </div>
-            <div className="div">
-                <div></div>
-                <p>loved by 10K+ creators</p>
+            <div className="div flex gap-1.5 items-center">
+                <div className="w-4 h-4 bg-purple-500 rounded-full"></div>
+                <p className="text-[12px] text-[#94A3B8]">loved by 10K+ creators</p>
             </div>
         </div>
+       </div>
       </div>
-      <div className="rightSideContainer border">
+     
+     
+     
+      <div className="rightSideContainer  ">
        <img src={bundle} alt="heroImg" /> 
       </div>
     </div>
