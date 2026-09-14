@@ -53,7 +53,7 @@ export default function Working() {
             </div>
             <div className="workCard  flex flex-col items-center gap-2 ">
               <div className="logoImgBox  w-16 h-16 flex items-center justify-center rounded-lg bg-[#1e1049]">
-                <i class="fa-regular fa-file-lines"></i>
+                <i class="fa-regular fa-file-lines text-[32px] text-purple-400"></i>
               </div>
               <div className="cardInfo flex flex-col items-center">
                 <h2 className="text-[16px] font-semibold">Create Content</h2>
@@ -71,16 +71,16 @@ export default function Working() {
           </div>
           <div className="cardInfoWrapper w-70 flex items-start gap-1 py-2 absolute top-3.5">
             <div className="w-10 h-10 rounded-full flex items-center justify-center bg-purple-600 ">
-              <p className="text-[18px] font-semibold text-black">01</p>
+              <p className="text-[18px] font-semibold text-black">03</p>
             </div>
             <div className="workCard  flex flex-col items-center gap-2 ">
               <div className="logoImgBox  w-16 h-16 flex items-center justify-center rounded-lg bg-[#1e1049]">
-                <i class="fa-regular fa-lightbulb text-[32px] text-purple-400"></i>
+                <i class="fa-regular fa-calendar text-[32px] text-purple-400"></i>
               </div>
               <div className="cardInfo flex flex-col items-center">
-                <h2 className="text-[16px] font-semibold">Generate Ideas</h2>
+                <h2 className="text-[16px] font-semibold">Plan & Schedule</h2>
                 <p className="text-center w-40 text-[14px] text-[#94A3B8]">
-                  Get fresh, relevant ideas with Al;
+                  Schedule across all your platforms.
                 </p>
               </div>
             </div>
@@ -93,16 +93,16 @@ export default function Working() {
           </div>
           <div className="cardInfoWrapper w-70 flex items-start gap-1 py-2 absolute top-3.5">
             <div className="w-10 h-10 rounded-full flex items-center justify-center bg-purple-600 ">
-              <p className="text-[18px] font-semibold text-black">01</p>
+              <p className="text-[18px] font-semibold text-black">04</p>
             </div>
             <div className="workCard  flex flex-col items-center gap-2 ">
               <div className="logoImgBox  w-16 h-16 flex items-center justify-center rounded-lg bg-[#1e1049]">
-                <i class="fa-regular fa-lightbulb text-[32px] text-purple-400"></i>
+               <i class="fa-solid fa-chart-simple text-[32px] text-purple-400"></i>
               </div>
               <div className="cardInfo flex flex-col items-center">
-                <h2 className="text-[16px] font-semibold">Generate Ideas</h2>
+                <h2 className="text-[16px] font-semibold">Analyze & Grow</h2>
                 <p className="text-center w-40 text-[14px] text-[#94A3B8]">
-                  Get fresh, relevant ideas with Al;
+                  Track performance and improve continuously.
                 </p>
               </div>
             </div>

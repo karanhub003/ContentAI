@@ -23,6 +23,7 @@ export default function Landing() {
         <Problem/>
         <hr className='border-[#1E293B]' />
         <Working/>
+        <hr className='border-[#1E293B]' />
    </main>
    
    </>
