@@ -20,6 +20,7 @@ export default function Landing() {
         <TrustedTeams/>
         <hr className='border-[#1E293B]' />
         <Problem/>
+        <hr className='border-[#1E293B]' />
    </main>
    
    </>
