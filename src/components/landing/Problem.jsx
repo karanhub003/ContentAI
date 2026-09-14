@@ -11,8 +11,8 @@ export default function Problem() {
           </div>
           <div className="infoWrapper">
             <div className="headingWrapper">
-            <h2 className="text-[18px] font-semibold ">Content creation is hard.</h2>
-            <h2 className="text-[18px] font-semibold text-purple-500">We make it simple.</h2>
+            <h2 className="text-[24px] font-semibold ">Content creation is hard.</h2>
+            <h2 className="text-[24px] font-semibold text-purple-500">We make it simple.</h2>
           </div>
           <p className="text-[14px] text-[#94A3B8]">
             Creating consistent, high-quality content takes time, effort, and

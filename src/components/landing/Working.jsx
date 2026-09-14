@@ -10,7 +10,7 @@ export default function Working() {
         </div>
         <div className="infoWrapper">
           <div className="headingWrapper">
-            <h2 className="text-[18px] font-semibold ">
+            <h2 className="text-[24px] font-semibold ">
               From idea to impact in four simple steps.
             </h2>
           </div>

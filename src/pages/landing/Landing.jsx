@@ -6,6 +6,7 @@ import heroImg from '../../assets/Landing Page/hero.webp'
 import TrustedTeams from '../../components/landing/TrustedTeams'
 import Problem from '../../components/landing/Problem'
 import Working from '../../components/landing/Working'
+import Features from '../../components/landing/Features'
 
 export default function Landing() {
   return (
@@ -24,6 +25,7 @@ export default function Landing() {
         <hr className='border-[#1E293B]' />
         <Working/>
         <hr className='border-[#1E293B]' />
+        <Features/>
    </main>
    
    </>
