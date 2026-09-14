@@ -5,6 +5,7 @@ import HighlightingCards from '../../components/landing/HighlightingCards'
 import heroImg from '../../assets/Landing Page/hero.webp'
 import TrustedTeams from '../../components/landing/TrustedTeams'
 import Problem from '../../components/landing/Problem'
+import Working from '../../components/landing/Working'
 
 export default function Landing() {
   return (
@@ -21,6 +22,7 @@ export default function Landing() {
         <hr className='border-[#1E293B]' />
         <Problem/>
         <hr className='border-[#1E293B]' />
+        <Working/>
    </main>
    
    </>
