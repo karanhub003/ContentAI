@@ -6,7 +6,7 @@ export default function Working() {
       <div className="TopInfoWrapper  flex flex-col gap-2 ">
         <div className="smallInfo flex gap-1.5 items-center w-27 rounded-lg p-1.5 bg-purple-600/30 text-purple-400">
           <i class="fa-solid fa-wand-magic-sparkles text-purple-400 text-[10px]"></i>
-          <p className=" text-[10px]  ">HWO IT WORKS</p>
+          <p className=" text-[10px]  ">HOW IT WORKS</p>
         </div>
         <div className="infoWrapper">
           <div className="headingWrapper">

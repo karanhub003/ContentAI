@@ -7,6 +7,7 @@ import TrustedTeams from '../../components/landing/TrustedTeams'
 import Problem from '../../components/landing/Problem'
 import Working from '../../components/landing/Working'
 import Features from '../../components/landing/Features'
+import Reviews from '../../components/landing/Reviews'
 
 export default function Landing() {
   return (
@@ -26,6 +27,8 @@ export default function Landing() {
         <Working/>
         <hr className='border-[#1E293B]' />
         <Features/>
+        <hr className='border-[#1E293B]' />
+        <Reviews/>
    </main>
    
    </>

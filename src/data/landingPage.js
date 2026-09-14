@@ -7,6 +7,11 @@ import figmaImg from "../assets/Landing Page/figma.webp";
 import spotifyImg from "../assets/Landing Page/spotify.webp";
 import youtubeImg from "../assets/Landing Page/youtube.webp";
 
+
+import michaelImg from '../assets/Landing Page/men1.webp'
+import sarahImg from '../assets/Landing Page/men2.webp'
+import priyaImg from '../assets/Landing Page/women1.webp'
+
 export const trustedLogos = [
   {
     id: 1,
@@ -83,4 +88,34 @@ export const productFeatures = [
 
 
 
+];
+
+export const reviews = [
+  {
+    id: 1,
+    name: "Sarah Johnson",
+    role: "Marketing Manager",
+    image:sarahImg,
+    review:
+      "ContentPilot AI has completely changed the way I create content. It's like having a full marketing team by my side.",
+    rating: 5,
+  },
+  {
+    id: 2,
+    name: "Michael Chen",
+    role: "Marketing Manager",
+    image: michaelImg,
+    review:
+      "The scheduling and analytics tools are a game-changer. I've saved hours every week.",
+    rating: 4,
+  },
+  {
+    id: 3,
+    name: "Priya Sharma",
+    role: "Small Business Owner",
+    image: priyaImg,
+    review:
+      "Super easy to use and incredibly powerful. Highly recommended for any creator or business.",
+    rating: 5,
+  },
 ];

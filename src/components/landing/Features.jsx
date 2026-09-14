@@ -8,9 +8,9 @@ export default function Features() {
         
         <div className="leftSideContainer  flex flex-col gap-7">
           <div className="topBox flex flex-col gap-1.5">
-            <div className="smallInfo flex gap-1.5 items-center w-27 rounded-lg p-1.5 bg-purple-600/30 text-purple-400">
+            <div className="smallInfo flex gap-1.5 items-center w-35 rounded-lg p-1.5 bg-purple-600/30 text-purple-400">
             <i class="fa-solid fa-wand-magic-sparkles text-purple-400 text-[10px]"></i>
-            <p className=" text-[10px]  ">HWO IT WORKS</p>
+            <p className=" text-[10px]  ">POWERFUL FEATURES</p>
           </div>
          <div className="headingWrapper  w-80 flex flex-col gap-2">
             <div className="headingBreakBox">
