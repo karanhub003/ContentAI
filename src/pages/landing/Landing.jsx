@@ -9,6 +9,7 @@ import Working from '../../components/landing/Working'
 import Features from '../../components/landing/Features'
 import Reviews from '../../components/landing/Reviews'
 import Price from '../../components/landing/Price'
+import BottomHero from '../../components/landing/BottomHero'
 
 export default function Landing() {
   return (
@@ -32,6 +33,7 @@ export default function Landing() {
         <Reviews/>
         <hr className='border-[#1E293B]' />
         <Price/>
+        <BottomHero/>
    </main>
    
    </>
