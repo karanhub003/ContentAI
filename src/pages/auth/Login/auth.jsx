@@ -5,19 +5,57 @@ import googleImg from "../../../assets/Auth Page/google.png";
 import microsoftImg from "../../../assets/Auth Page/microsoft.png";
 import appleImg from "../../../assets/Auth Page/apple.png";
 import bundle from "../../../assets/Auth Page/bundle.webp";
-
+import supabase from "../../../lib/supabase";
 import { features } from "../../../data/features";
 import { useNavigate } from "react-router-dom";
 
 export default function Auth() {
+  const [authMessage, setAuthMessage] = useState("");
   const [isTicked, setIsTicked] = useState(false);
   const [isSignUp, setIsSignUp] = useState(false);
 
   const navigate = useNavigate();
 
-  const navigateHandle = (e) => {
+  const navigateHandle = async (e) => {
     e.preventDefault();
-    navigate("/dashboard");
+    const formData = new FormData(e.currentTarget);
+    const email = formData.get("email");
+    const password = formData.get("password");
+
+    if (isSignUp) {
+      const { data, error } = await supabase.auth.signUp({
+        email,
+        password,
+      });
+      if (error) {
+        console.log(error.message);
+        return;
+      }
+      console.log("Signup successful:", data);
+      if(data.session){
+        navigate("/dashboard");
+        return
+      }else{
+        setAuthMessage("Account created. Please check your email to confirm your account.")
+      }
+
+
+    }else{
+      const {data,error} = await supabase.auth.signInWithPassword({
+        email,
+        password,
+      })
+
+      if(error){
+        setAuthMessage(error.message);
+        return;
+      }
+      if(data.session){
+        navigate("/dashboard")
+      }
+    }
+
+    
   };
 
   const tickedToggler = () => {
@@ -169,8 +207,8 @@ export default function Auth() {
                       required
                       className="w-[90%] outline-none placeholder:text-[12px]"
                       type="email"
-                      name=""
-                      id=""
+                      name="email"
+                      id="email"
                       placeholder="Enter your email"
                     />
                   </div>
@@ -194,8 +232,8 @@ export default function Auth() {
                       required
                       className="w-[90%] outline-none placeholder:text-[12px]"
                       type="password"
-                      name=""
-                      id=""
+                      name="password"
+                      id="password"
                       placeholder="Enter your password"
                     />
                   </div>
@@ -216,6 +254,12 @@ export default function Auth() {
                   </div>
                 )}
 
+
+                {
+                  authMessage&&(
+                    <p className="text-[12px] text-purple-400">{authMessage}</p>
+                  )
+                }
                 <button
                   className="border flex justify-center  cursor-pointer  p-3 rounded-lg bg-purple-600 hover:bg-purple-800 border-none"
                   type="submit"

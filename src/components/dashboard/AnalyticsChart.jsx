@@ -12,7 +12,6 @@ import {
 } from "recharts";
 
 export default function AnalyticsChart() {
-  console.log(contentPerformanceData);
   return (
     <div className="analyticsContainer   bg-[#0D131D]  rounded-xl p-3 flex flex-col gap-4.5 ">
       <div className="topContainer  flex items-center gap- ">
