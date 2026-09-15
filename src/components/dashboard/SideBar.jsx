@@ -2,9 +2,12 @@ import React from "react";
 import logoImg from "../../assets/New folder/logoimage.png"
 import AICreditsCard from "./AICreditsCard";
 import { NavLink } from "react-router-dom";
+import { useContext } from "react";
+import { AuthContext } from "../../context/AuthContext";
 
 
 export default function () {
+  const { logout } = useContext(AuthContext);
     
   return (
 
@@ -66,6 +69,9 @@ export default function () {
         <div className="toolsLinkBox flex gap-2 items-center p-2.5 hover:bg-linear-to-r from-purple-700/25 to-purple-900/5  rounded-lg group cursor-pointer  ">
           <i class="fa-solid fa-circle-question text-[#94A3B8] group-hover:text-[white]"></i>
           <span className="text-[#94A3B8] group-hover:text-[white]" >Help & Support</span>
+        </div>
+        <div className="toolsLinkBox flex gap-2 items-center p-2.5 hover:bg-linear-to-r from-purple-700/25 to-purple-900/5  rounded-lg group cursor-pointer  ">
+         <button onClick={logout} className="cursor-pointer">Logout</button>
         </div>
       </div>
       </div>
