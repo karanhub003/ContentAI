@@ -29,6 +29,7 @@ export default function Landing() {
         <Features/>
         <hr className='border-[#1E293B]' />
         <Reviews/>
+        <hr className='border-[#1E293B]' />
    </main>
    
    </>
