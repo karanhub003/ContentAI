@@ -4,7 +4,7 @@ import { trustedLogos } from "../../data/landingPage";
 
 export default function TrustedTeams() {
   return (
-    <div className="TrustedTeamsContainer  flex flex-col gap-2.5 w-345 mx-auto py-8 ">
+    <div className="TrustedTeamsContainer  flex flex-col gap-2.5 w-345 mx-auto py-8 my-5">
       <div className="topWrapper flex  justify-between  items-center  ">
         <div className="leftSide w-120 flex flex-col gap-2.5">
           <div className="smallInfo flex gap-1.5 items-center w-50 rounded-lg p-1.5 bg-purple-600/30 text-purple-400">

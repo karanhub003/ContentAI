@@ -3,7 +3,7 @@ import React from "react";
 export default function HighlightingCards() {
   return (
     <div className="HighlightingCardsContainer border border-[#1E293B] w-full bg-[#0D131D]">
-      <div className="highlightingCardWrapper flex w-345 mx-auto justify-between py-6 px-3.5">
+      <div className="highlightingCardWrapper flex w-345 mx-auto justify-between py-8 px-3.5">
         <div className="card  flex gap-3 p-6 items-center ">
           <div className=" w-15 h-15 flex items-center justify-center rounded-lg bg-purple-700/30"><i class="fa-solid fa-bolt-lightning text-[20px] text-purple-400"></i></div>
           <div className="info flex flex-col gap-0.5 w-35">

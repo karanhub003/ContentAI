@@ -3,7 +3,7 @@ import Button from "../common/Button";
 import {productFeatures} from '../../data/landingPage'
 export default function Features() {
   return (
-    <div className="featuresSectionContainer w-345 mx-auto py-5">
+    <div className="featuresSectionContainer w-345 mx-auto py-8 my-5">
       <div className="mainContentWrapper grid grid-cols-[1fr_1.75fr]">
         
         <div className="leftSideContainer  flex flex-col gap-7">

@@ -3,7 +3,7 @@ import Button from '../common/Button'
 
 export default function Price() {
   return (
-    <div className='priceSectionContainer w-345 mx-auto py-5 flex flex-col gap-5'>
+    <div className='priceSectionContainer w-345 mx-auto py-8 flex flex-col gap-5 my-5'>
         <div className="TopInfoWrapper  flex justify-between items-center ">
         <div className="leftSideWrapper flex flex-col gap-3">
           <div className="smallInfo flex gap-1.5 items-center w-48 rounded-lg p-1.5 bg-purple-600/30 text-purple-400">
@@ -48,7 +48,7 @@ export default function Price() {
             </div>
             <div className="div flex items-center gap-3.5">
             <i class="fa-solid fa-check text-green-400 text-[14px]"></i> 
-            <p className='text-[14px] text-[#94A3B8] font-medium'>10 scheduled pasta/month</p>
+            <p className='text-[14px] text-[#94A3B8] font-medium'>10 scheduled posts/month</p>
             </div>
             <div className="div flex items-center gap-3.5">
             <i class="fa-solid fa-check  text-green-400 text-[14px]"></i> 
@@ -121,7 +121,7 @@ export default function Price() {
             </div>
             <div className="div flex items-center gap-3.5">
             <i class="fa-solid fa-check text-green-400 text-[14px]"></i> 
-            <p className='text-[14px] text-[#94A3B8] font-medium'>S0O scheduled posts/month</p>
+            <p className='text-[14px] text-[#94A3B8] font-medium'>50O scheduled posts/month</p>
             </div>
             <div className="div flex items-center gap-3.5">
             <i class="fa-solid fa-check text-green-400 text-[14px]"></i> 

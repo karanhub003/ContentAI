@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Problem() {
   return (
-    <div className="problemSectionContainer  w-345 mx-auto py-5 flex flex-col gap-3">
+    <div className="problemSectionContainer  w-345 mx-auto py-8 flex flex-col gap-3 my-5">
       <div className="TopInfoWrapper  flex justify-between items-center ">
         <div className="leftSideWrapper flex flex-col gap-3">
           <div className="smallInfo flex gap-1.5 items-center w-27 rounded-lg p-1.5 bg-purple-600/30 text-purple-400">

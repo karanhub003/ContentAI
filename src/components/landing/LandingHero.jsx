@@ -37,7 +37,7 @@ export default function LandingHero() {
             </div>
             <div className="div flex gap-1.5 items-center">
                 <div className="w-4 h-4 bg-purple-500 rounded-full"></div>
-                <p className="text-[12px] text-[#94A3B8]">free forever plan</p>
+                <p className="text-[12px] text-[#94A3B8]">Free forever plan</p>
             </div>
             <div className="div flex gap-1.5 items-center">
                 <div className="w-4 h-4 bg-purple-500 rounded-full"></div>

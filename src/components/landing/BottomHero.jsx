@@ -4,7 +4,7 @@ import bottomHero from '../../assets/Landing Page/bottomhero.webp'
 
 export default function BottomHero() {
   return (
-    <div className='bottomHeroSectionContainer bg-cover bg-no-repeat bg-center  max-w-375 mx-auto rounded-3xl border overflow-hidden border-purple-600 py-6' style={{ backgroundImage: `url(${bottomHero})` }}>
+    <div className='bottomHeroSectionContainer bg-cover bg-no-repeat bg-center  max-w-375 mx-auto rounded-3xl border overflow-hidden border-purple-600 py-8 my-5' style={{ backgroundImage: `url(${bottomHero})` }}>
        <div className="infoWrapper flex flex-col gap-4 max-w-345 mx-auto">
         <div className="topSide flex flex-col gap-3">
                   <p className=" text-[10px] w-30 rounded-lg text-center  p-1.5 bg-purple-600/30 text-purple-400 ">

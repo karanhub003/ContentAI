@@ -2,7 +2,7 @@ import React from "react";
 import logoImg from "../../assets/New folder/logoimage.png";
 export default function Footer() {
   return (
-    <div className="footerSectionContainer w-345 mx-auto py-8 grid grid-cols-[300px_1fr]">
+    <div className="footerSectionContainer w-345 mx-auto py-8 grid grid-cols-[300px_1fr] my-5">
       <div className="leftSideContainer  flex flex-col gap-5">
         <div className="topSide">
           <div className="logoContainer flex items-center gap-1">

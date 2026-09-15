@@ -3,7 +3,7 @@ import {reviews} from '../../data/landingPage'
 
 export default function Reviews() {
   return (
-    <div className='reviewsSectionContainer w-345 mx-auto py-5 flex flex-col gap-5 '>
+    <div className='reviewsSectionContainer w-345 mx-auto py-8 flex flex-col gap-5 my-5'>
     <div className="TopInfoWrapper  flex justify-between items-center ">
         <div className="leftSideWrapper flex flex-col gap-3">
           <div className="smallInfo flex gap-1.5 items-center w-35 rounded-lg p-1.5 bg-purple-600/30 text-purple-400">
