@@ -7,18 +7,26 @@ import appleImg from "../../../assets/Auth Page/apple.png";
 import bundle from "../../../assets/Auth Page/bundle.webp";
 
 import { features } from "../../../data/features";
+import { useNavigate } from "react-router-dom";
 
 export default function Auth() {
   const [isTicked, setIsTicked] = useState(false);
   const [isSignUp, setIsSignUp] = useState(false);
 
+  const navigate = useNavigate();
+
+  const navigateHandle = (e) => {
+    e.preventDefault();
+    navigate("/dashboard");
+  };
+
   const tickedToggler = () => {
     setIsTicked(!isTicked);
   };
 
-  const signUp=()=>{
-    setIsSignUp(!isSignUp)
-  }
+  const signUp = () => {
+    setIsSignUp(!isSignUp);
+  };
 
   return (
     <div className="LoginMainContainer  min-h-screen flex justify-center items-center    ">
@@ -103,7 +111,6 @@ export default function Auth() {
               <p className="text-[12px] font-medium">Dark</p>
               <i className="fa-solid fa-angle-down text-[12px]"></i>
             </div>
-
           </div>
           <div className="innerFormContainer flex flex-col  border w-120 mx-auto  border-[#1E293B] bg-[#111927] rounded-lg gap-3.5 overflow-hidden">
             <div className="topSideContainer p-6">
@@ -118,7 +125,10 @@ export default function Auth() {
                   <span className="text-purple-500">ContentPilot Al</span>
                 </p>
               </div>
-              <form className=" flex flex-col gap-6 py-3.5">
+              <form
+                onSubmit={navigateHandle}
+                className=" flex flex-col gap-6 py-3.5"
+              >
                 {isSignUp && (
                   <div className="nameWrapperContainer flex justify-between  ">
                     <div className="firstNameField flex flex-col gap-1">
@@ -126,6 +136,7 @@ export default function Auth() {
                         Name
                       </label>
                       <input
+                        required
                         type="text"
                         id="name"
                         className="name  w-50 border p-2 rounded-lg placeholder:text-[12px] outline-none border-[#1E293B]"
@@ -155,6 +166,7 @@ export default function Auth() {
                       <i class="fa-solid fa-envelope text-[#94A3B8] text-[11px] "></i>
                     </div>
                     <input
+                      required
                       className="w-[90%] outline-none placeholder:text-[12px]"
                       type="email"
                       name=""
@@ -179,6 +191,7 @@ export default function Auth() {
                       <i class="fa-solid fa-lock text-[#94A3B8] text-[11px] "></i>
                     </div>
                     <input
+                      required
                       className="w-[90%] outline-none placeholder:text-[12px]"
                       type="password"
                       name=""
@@ -241,13 +254,16 @@ export default function Auth() {
             <div className="div bg-[#0D131D] border-t border-[#1E293B]  ">
               <div className=" py-6 px-4 text-center text-[14px] flex gap-1 items-center justify-center ">
                 <p>
-
-                 {isSignUp ? "Already have an account?":"Don't have an account?"}
-                 
+                  {isSignUp
+                    ? "Already have an account?"
+                    : "Don't have an account?"}
                 </p>
-                 <span onClick={signUp} className="text-purple-500 cursor-pointer ">
-                   {isSignUp ? "Sign in" : "Sign up"}
-                  </span>
+                <span
+                  onClick={signUp}
+                  className="text-purple-500 cursor-pointer "
+                >
+                  {isSignUp ? "Sign in" : "Sign up"}
+                </span>
               </div>
             </div>
           </div>

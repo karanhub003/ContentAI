@@ -1,6 +1,7 @@
 import React from 'react'
 import Button from '../common/Button'
 import bottomHero from '../../assets/Landing Page/bottomhero.webp'
+import { NavLink } from 'react-router-dom'
 
 export default function BottomHero() {
   return (
@@ -26,7 +27,7 @@ export default function BottomHero() {
               </div>
                <div className="bottomSide flex flex-col gap-5">
                  <div className="ctaBtnWrapper  flex gap-4 items-center">
-                    <Button variant="secondary" size="lg">Get started free</Button>
+                    <NavLink to="/auth"><Button variant="secondary" size="lg">Get started free</Button></NavLink>
                     <Button variant="outline" size="lg">Watch demo</Button>
                 </div>
                </div>

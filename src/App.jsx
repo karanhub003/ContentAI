@@ -7,7 +7,8 @@ import Template from './pages/Template/Template'
 import { Navigate, Route, Routes } from 'react-router-dom'
 
 import Auth from './pages/auth/Login/auth'
-import Landing from './pages/landing/Landing'
+import Landing from './pages/landing/landing'
+ 
 
 
 

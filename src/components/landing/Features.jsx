@@ -1,6 +1,7 @@
 import React from "react";
 import Button from "../common/Button";
 import {productFeatures} from '../../data/landingPage'
+import { NavLink } from "react-router-dom";
 export default function Features() {
   return (
     <div className="featuresSectionContainer w-345 mx-auto py-8 my-5">
@@ -24,7 +25,7 @@ export default function Features() {
          </div>
           </div>
            <div className="ctaBtn w-50">
-             <Button variant="secondary" size="lg">Explore all features</Button>
+             <NavLink to="/auth"><Button variant="secondary" size="lg">Explore all features</Button></NavLink>
            </div>
         </div>
         <div className="rightSideContainer  grid grid-cols-3 gap-4 ">

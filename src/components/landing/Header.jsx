@@ -1,6 +1,7 @@
 import React from 'react'
 import Button from '../common/Button'
 import logoImg from '../../assets/New folder/logoimage.png'
+import { NavLink } from 'react-router-dom'
 export default function Header() {
   return (
     <div className='landingHeaderContainer p-3'>
@@ -19,8 +20,8 @@ export default function Header() {
             <div className="navLinksBox text-[#94A3B8] text-[14px] font-bold cursor-pointer hover:text-purple-400 hover:underline">About</div>
         </div>
         <div className="ctaBtnContainer flex gap-4 items-center">
-            <Button  variant='outline' size='md'>Sign in</Button>
-            <Button variant= 'secondary'  size='lg'>Get started free </Button>
+           <NavLink to="/auth"><Button    variant='outline' size='md'>Sign in</Button></NavLink>
+           <NavLink to="/auth"><Button variant= 'secondary'  size='lg'>Get started free </Button></NavLink>
         </div>
 
     </div>
