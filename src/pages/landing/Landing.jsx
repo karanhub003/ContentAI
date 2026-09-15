@@ -10,6 +10,7 @@ import Features from '../../components/landing/Features'
 import Reviews from '../../components/landing/Reviews'
 import Price from '../../components/landing/Price'
 import BottomHero from '../../components/landing/BottomHero'
+import Footer from '../../components/landing/Footer'
 
 export default function Landing() {
   return (
@@ -34,6 +35,7 @@ export default function Landing() {
         <hr className='border-[#1E293B]' />
         <Price/>
         <BottomHero/>
+        <Footer/>
    </main>
    
    </>
