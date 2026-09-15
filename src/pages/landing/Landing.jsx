@@ -8,6 +8,7 @@ import Problem from '../../components/landing/Problem'
 import Working from '../../components/landing/Working'
 import Features from '../../components/landing/Features'
 import Reviews from '../../components/landing/Reviews'
+import Price from '../../components/landing/Price'
 
 export default function Landing() {
   return (
@@ -30,6 +31,7 @@ export default function Landing() {
         <hr className='border-[#1E293B]' />
         <Reviews/>
         <hr className='border-[#1E293B]' />
+        <Price/>
    </main>
    
    </>
