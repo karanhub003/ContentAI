@@ -43,10 +43,10 @@ export default function () {
           <i class="fa-regular fa-file-lines text-[#94A3B8] group-hover:text-[white]"></i>
           <span className="text-[#94A3B8] group-hover:text-[white]" >Template</span>
         </NavLink>
-        <div className="landingLinksBox flex gap-2 items-center hover:bg-linear-to-r from-purple-700/25 to-purple-900/5 p-2.5 rounded-lg group cursor-pointer  ">
+        <NavLink to="/under-development-teamwork" className="landingLinksBox flex gap-2 items-center hover:bg-linear-to-r from-purple-700/25 to-purple-900/5 p-2.5 rounded-lg group cursor-pointer  ">
           <i class="fa-solid fa-user-group text-[#94A3B8] group-hover:text-[white]"></i>
           <span className="text-[#94A3B8] group-hover:text-[white]" >Team Workspace</span>
-        </div>
+        </NavLink>
         <div className="landingLinksBox flex gap-2 items-center hover:bg-linear-to-r from-purple-700/25 to-purple-900/5 p-2.5 rounded-lg group cursor-pointer  ">
           <i class="fa-regular fa-image text-[#94A3B8] group-hover:text-[white]"></i>
           <span className="text-[#94A3B8] group-hover:text-[white]" >Media Library</span>

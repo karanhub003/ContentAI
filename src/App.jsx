@@ -9,6 +9,7 @@ import { Navigate, Route, Routes } from "react-router-dom";
 import Auth from "./pages/auth/Login/auth";
 import Landing from "./pages/landing/landing";
 import ProtectedRoute from "./components/ProtectedRoute";
+import TeamWork from "./pages/UnderDevelopment/TeamWork";
 
 export default function App() {
   return (
@@ -22,6 +23,7 @@ export default function App() {
         <Route path="/ai-writer" element={<AIWriter />} />
         <Route path="/calendar" element={<Calendar />} />
         <Route path="/template" element={<Template />} />
+        <Route path="/under-development-teamwork" element={<TeamWork/>}/>
       </Route>
       </Route>
      

@@ -5,6 +5,7 @@ export default function Button({
   variant = "primary",
   size = "md",
   className = "",
+  onClick,
   ...props
 }) {
   const variants = {
@@ -26,9 +27,10 @@ export default function Button({
         ${variants[variant]}
         ${sizes[size]}
         ${className}
+        
       `}
         {...props}>
-      <button>
+      <button onClick={onClick}>
         {children}
       </button>
     </div>
