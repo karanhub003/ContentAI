@@ -23,7 +23,7 @@ export default function () {
       </div>
       <hr className="my-2.5 border border-[#1E293B]  "/>
       <div className="LandingsContainer flex flex-col gap-4 py-2.5 px-3.5 ">
-        <NavLink to="/dashboard" className="landingLinksBox flex gap-2 items-center hover:bg-linear-to-r from-purple-700/25 to-purple-900/5 p-2.5 rounded-lg group cursor-pointer  ">
+        <NavLink to="/dashboard" className="landingLinksBox flex gap-2 items-center    hover:bg-linear-to-r from-purple-700/25 to-purple-900/5 p-2.5 rounded-lg group cursor-pointer">
           <i class="fa-solid fa-border-all text-[#94A3B8] group-hover:text-[white]"></i>
           <span className="text-[#94A3B8] group-hover:text-[white]" >Dashboard</span>
         </NavLink>
@@ -70,8 +70,8 @@ export default function () {
           <i class="fa-solid fa-circle-question text-[#94A3B8] group-hover:text-[white]"></i>
           <span className="text-[#94A3B8] group-hover:text-[white]" >Help & Support</span>
         </div>
-        <div className="toolsLinkBox flex gap-2 items-center p-2.5 hover:bg-linear-to-r from-purple-700/25 to-purple-900/5  rounded-lg group cursor-pointer  ">
-         <button onClick={logout} className="cursor-pointer">Logout</button>
+        <div className="toolsLinkBox flex gap-2 items-center p-2.5 rounded-lg group cursor-pointer  ">
+         <button onClick={logout} className="cursor-pointer border hover:bg-purple-900 hover:border-purple-300  border-purple-800 w-full text-center p-1.5 bg-purple-500 rounded-xl text-[18px] font-semibold ">Logout</button>
         </div>
       </div>
       </div>

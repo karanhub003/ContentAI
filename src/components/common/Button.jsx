@@ -10,10 +10,10 @@ export default function Button({
 }) {
   const variants = {
     primary:
-      "bg-linear-to-r from-purple-700/25 to-purple-900/5 text-white hover:bg-[#8B5CF6]",
-    secondary: "bg-[#8B5CF6] text-white hover:bg-[#7B1FA2]",
-    outline: "border border-[#263244] text-white hover:bg-[#172033]",
-    ghost: "text-[#94A3B8] hover:bg-[#172033] hover:text-white",
+      "bg-linear-to-r from-purple-700/25 to-purple-900/5 text-white hover:bg-[#8B5CF6] cursor-pointer",
+    secondary: "bg-[#8B5CF6] text-white hover:bg-[#7B1FA2] cursor-pointer",
+    outline: "border border-[#263244] text-white hover:bg-[#172033] cursor-pointer",
+    ghost: "text-[#94A3B8] hover:bg-[#172033] hover:text-white cursor-pointer",
   };
 
   const sizes = {
@@ -30,7 +30,7 @@ export default function Button({
         
       `}
         {...props}>
-      <button onClick={onClick}>
+      <button className="cursor-pointer" onClick={onClick}>
         {children}
       </button>
     </div>
