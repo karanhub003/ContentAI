@@ -25,7 +25,7 @@ export default function () {
     },
     {
       name: "Analytics",
-      path: "",
+      path: "/under-development-analytics",
       icon: "fa-chart-pie",
     },
     {

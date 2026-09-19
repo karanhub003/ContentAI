@@ -10,6 +10,7 @@ import Auth from "./pages/auth/Login/auth";
 import Landing from "./pages/landing/landing";
 import ProtectedRoute from "./components/ProtectedRoute";
 import TeamWork from "./pages/UnderDevelopment/TeamWork";
+import Analytics from "./pages/UnderDevelopment/Analytics";
 
 export default function App() {
   return (
@@ -24,6 +25,7 @@ export default function App() {
         <Route path="/calendar" element={<Calendar />} />
         <Route path="/template" element={<Template />} />
         <Route path="/under-development-teamwork" element={<TeamWork/>}/>
+        <Route path="/under-development-analytics" element={<Analytics/>}/>
       </Route>
       </Route>
      
